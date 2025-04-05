@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0a3d62, #1e3799);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.welcome-screen {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+.welcome-screen h1 {
+    font-size: 2.5rem;
+    color: #74b9ff;
+}
+.welcome-screen p {
+    font-size: 1.2rem;
+}
+.welcome-screen button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    background-color: #0984e3;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.welcome-screen button:hover {
+    background-color: #74b9ff;
+}
