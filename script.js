@@ -1,15 +1,16 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-  navigate('home'); // Ativa home ao carregar
+  navigate('home');
 });
 
 function navigate(sectionId) {
   const sections = document.querySelectorAll('main section');
   sections.forEach(section => {
-    section.style.display = 'none';
+    section.classList.remove('active');
   });
+
   const activeSection = document.getElementById(sectionId);
   if (activeSection) {
-    activeSection.style.display = 'block';
+    activeSection.classList.add('active');
   }
 }
