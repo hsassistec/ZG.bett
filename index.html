@@ -1,17 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZG Bet - Cassino Online</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZG Bet - Cassino Online</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="welcome-screen">
-        <h1>Bem-vindo ao ZG Bet</h1>
-        <p>Seu cassino online favorito</p>
-        <button onclick="start()">Começar</button>
-    </div>
-    <script src="script.js"></script>
+  <header>
+    <h1>ZG Bet</h1>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="navigate('home')">Início</a></li>
+        <li><a href="#" onclick="navigate('slots')">Slots</a></li>
+        <li><a href="#" onclick="navigate('sports')">Esportes</a></li>
+        <li><a href="#" onclick="navigate('live')">Cassino Ao Vivo</a></li>
+        <li><a href="#" onclick="navigate('vip')">VIP</a></li>
+        <li><a href="#" onclick="navigate('login')">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="active">
+      <h2>Bem-vindo ao ZG Bet</h2>
+      <p>Seu cassino online favorito</p>
+      <button onclick="alert('Vamos começar!')">Começar</button>
+    </section>
+
+    <section id="slots">
+      <h2>Jogos de Slot</h2>
+      <p>Escolha seu jogo favorito e boa sorte!</p>
+    </section>
+
+    <section id="sports">
+      <h2>Apostas Esportivas</h2>
+      <p>Aposte nos seus times favoritos ao vivo.</p>
+    </section>
+
+    <section id="live">
+      <h2>Cassino Ao Vivo</h2>
+      <p>Experiência real com dealers ao vivo.</p>
+    </section>
+
+    <section id="vip">
+      <h2>Área VIP</h2>
+      <p>Conquiste benefícios exclusivos enquanto joga.</p>
+    </section>
+
+    <section id="login">
+      <h2>Login / Cadastro</h2>
+      <p>Em breve: sistema de autenticação.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

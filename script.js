@@ -1,4 +1,5 @@
-function start() {
-    alert('Vamos jogar!');
-    // Aqui você pode redirecionar para outra página ou iniciar o jogo
+function navigate(sectionId) {
+  const sections = document.querySelectorAll('main section');
+  sections.forEach(section => section.classList.remove('active'));
+  document.getElementById(sectionId).classList.add('active');
 }
